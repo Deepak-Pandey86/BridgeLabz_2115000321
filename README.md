@@ -55,3 +55,10 @@ Worked with access modifiers, getters, and setters to manage class attributes.
 Practiced using constructors for initializing object attributes.
 Used the this keyword to refer to the current instance of the class.
 Created a displayDetails() method to display the details of objects.
+
+feb 02
+
+Use static for shared values.
+Using This keyword which refers to the current class instance in Java.
+Using final variables for identifiers or constants that should remain unchanged.
+Using instanceof for safe type-checking and to prevent runtime errors during typecasting.
