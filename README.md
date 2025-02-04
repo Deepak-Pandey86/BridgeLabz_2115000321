@@ -45,6 +45,7 @@ January 31
 Worked with Java class and object .such as Book , Employee ,circle
 
 February 02
+
 Worked with access modifiers, getters, and setters to manage class attributes.
 Practiced using constructors for initializing object attributes.
 Used the this keyword to refer to the current instance of the class.
