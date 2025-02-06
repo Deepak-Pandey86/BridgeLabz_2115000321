@@ -56,7 +56,7 @@ Practiced using constructors for initializing object attributes.
 Used the this keyword to refer to the current instance of the class.
 Created a displayDetails() method to display the details of objects.
 
-feb 02
+feb 04
 
 Use static for shared values.
 Using This keyword which refers to the current class instance in Java.
