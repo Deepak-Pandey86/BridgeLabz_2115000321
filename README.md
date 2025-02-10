@@ -77,10 +77,14 @@ Use Inheritance - Use Single Level Inheritance - Using Multilevel Inheritance - 
 feb 10
 
 Encapsulation:
+
 Class properties are made private to prevent unauthorized access and modification. Public methods are provided to access and manipulate the internal state safely.
 Interface:
+
 Created an interface to define method signatures that are implemented by concrete classes, ensuring that they adhere to specific behaviors.
 Polymorphism:
+
 Demonstrated polymorphism by overriding methods in derived classes. This allows the same method to behave differently depending on the object calling it.
 Abstract Class:
+
 Implemented abstract classes that serve as templates for child classes, forcing them to implement specific methods.
