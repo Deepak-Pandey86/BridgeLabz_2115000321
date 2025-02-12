@@ -87,3 +87,18 @@ Demonstrated polymorphism by overriding methods in derived classes. This allows 
 
 Abstract Class:
 Implemented abstract classes that serve as templates for child classes, forcing them to implement specific methods.
+
+feb 12
+
+A Linked List is a dynamic data structure where elements (nodes) are linked using pointers. Each node contains data and a reference to the next node.
+
+Types of Linked Lists:
+Singly Linked List – Each node points to the next node.
+Doubly Linked List – Each node has pointers to both the next and previous nodes.
+Circular Linked List – The last node connects back to the first, forming a loop.
+
+Key Operations:
+Insertion (beginning, end, specific position)
+Deletion (by value or position)
+Traversal (forward/backward in doubly linked lists)
+Searching (find an element)
