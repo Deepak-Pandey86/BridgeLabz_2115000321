@@ -104,6 +104,7 @@ Traversal (forward/backward in doubly linked lists)
 Searching (find an element)
 
 feb 13
+
 Stack 📚
 A stack is a LIFO (Last In, First Out) data structure. Elements are added and removed from the same end (top).
 
@@ -112,6 +113,7 @@ push(x): Adds x to the top.
 pop(): Removes and returns the top element.
 peek(): Returns the top element without removing it.
 Uses: Function calls (recursion), undo/redo, expression evaluation (parentheses matching).
+
 Queue 🚃
 A queue is a FIFO (First In, First Out) data structure. Elements are added at the rear and removed from the front.
 
@@ -124,6 +126,8 @@ Circular Queue (Wraps around)
 Deque (Double-Ended Queue) (Insert/delete at both ends)
 Priority Queue (Elements sorted by priority)
 Uses: Scheduling (OS processes, CPU tasks), BFS (Graph traversal).
+
+
 HashMap (Dictionary in Python, Map in Java/C++) 🗺️
 A hashmap is a key-value data structure that allows fast lookups (O(1) on average) using a hash function.
 
@@ -132,6 +136,8 @@ put(key, value): Inserts a key-value pair.
 get(key): Retrieves the value for a key.
 remove(key): Deletes the key-value pair.
 Uses: Caching, database indexing, frequency counting.
+
+
 Hashing 🔑
 Hashing is a technique to map data to a fixed-size hash table using a hash function.
 
@@ -145,19 +151,29 @@ Uses: HashMaps, password security (SHA, MD5), data structures like Bloom filters
 
 
 feb 14
+
 Sorting is the process of arranging elements in a specific order, typically ascending or descending. 
 
 1. Comparison-Based Sorting
 These algorithms compare elements to determine their order.
+
 Bubble Sort → Repeatedly swaps adjacent elements if they are in the wrong order. (O(n²))
+
 Selection Sort → Finds the smallest element and places it at the beginning. (O(n²))
+
 Insertion Sort → Builds a sorted array one element at a time. (O(n²), but O(n) for nearly sorted data)
+
 Merge Sort → Divides the array, sorts each part, and merges them. (O(n log n), stable)
+
 Quick Sort → Uses a pivot to partition the array and sorts recursively. (O(n log n) avg, O(n²) worst)
+
 Heap Sort → Uses a heap data structure to sort efficiently. (O(n log n), not stable)
 
-2. Non-Comparison-Based Sorting
+3. Non-Comparison-Based Sorting
 These do not compare elements directly and are often faster for specific cases.
+
 Counting Sort → Uses an auxiliary array to count occurrences. (O(n + k), only for integers)
+
 Radix Sort → Sorts numbers digit by digit. (O(nk), stable)
+
 Bucket Sort → Distributes elements into buckets and sorts them individually. (O(n + k), stable)
