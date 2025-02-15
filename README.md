@@ -177,3 +177,65 @@ Counting Sort → Uses an auxiliary array to count occurrences. (O(n + k), only 
 Radix Sort → Sorts numbers digit by digit. (O(nk), stable)
 
 Bucket Sort → Distributes elements into buckets and sorts them individually. (O(n + k), stable)
+
+feb 15
+
+StringBuffer:
+
+A mutable sequence of characters (unlike String which is immutable).
+Thread-safe (synchronized), meaning it can be used in a multithreaded environment.
+Slower than StringBuilder due to synchronization.
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" World");
+System.out.println(sb);
+
+StringBuilder:
+
+Similar to StringBuffer but not thread-safe.
+Faster than StringBuffer, making it more efficient for single-threaded applications.
+
+FileReader:
+
+Used to read character-based data from a file.
+Reads data character by character, making it suitable for text files.
+Often used with BufferedReader for efficient line-by-line reading.
+FileReader fr = new FileReader("file.txt");
+int ch;
+while ((ch = fr.read()) != -1) {
+    System.out.print((char) ch);
+}
+fr.close();
+
+InputStreamReader:
+
+Converts byte streams (like FileInputStream or System.in) into character streams.
+Useful for reading binary files with character encoding (like UTF-8).
+InputStreamReader isr = new InputStreamReader(System.in);
+BufferedReader br = new BufferedReader(isr);
+String input = br.readLine();
+System.out.println("You entered: " + input);
+
+ Linear Search:
+ 
+Sequential search algorithm used to find an element in an array/list.
+Time Complexity: 
+O(n) (worst case).
+Best for: Small or unsorted datasets.
+
+
+Binary Search:
+
+Efficient search algorithm for sorted arrays.
+Uses divide and conquer approach by repeatedly dividing the search range in half.
+Time Complexity: 
+O(logn).
+Best for: Large, sorted datasets.
+
+Hashset:
+
+HashSet is a part of Java’s Collection Framework and implements the Set interface.
+It stores unique elements only (does not allow duplicates).
+Uses HashMap internally for storage, ensuring fast operations.
+Unordered: Does not maintain any insertion order.
+Allows null values but only one.
+
