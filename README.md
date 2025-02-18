@@ -239,3 +239,61 @@ Uses HashMap internally for storage, ensuring fast operations.
 Unordered: Does not maintain any insertion order.
 Allows null values but only one.
 
+feb 17
+
+Runtime analysis is the process of evaluating the performance of an algorithm in terms of how its execution time increases as the size of the input grows. The goal is to understand how efficiently an algorithm runs, particularly for large inputs, and predict its behavior based on input size.
+Big O Notation (O):
+
+Represents the upper bound of an algorithm's time complexity, providing a worst-case scenario for how the algorithm performs.
+For example, O(n) means the algorithm's running time grows linearly with the size of the input.
+
+Time Complexity Analysis
+Time complexity refers to how the running time of an algorithm increases as the size of the input grows. It is generally expressed using Big O notation, which represents the upper bound of the runtime.
+
+Common Time Complexities:
+O(1): Constant time. The algorithm's runtime doesn't depend on the size of the input.
+
+Example: Accessing an element in an array by index.
+O(log n): Logarithmic time. The runtime grows logarithmically with the input size.
+
+Example: Binary search.
+O(n): Linear time. The runtime grows linearly with the input size.
+
+Example: Linear search or iterating over an array.
+O(n log n): Linearithmic time. Often seen in efficient sorting algorithms like Merge Sort and Quick Sort.
+
+O(n²): Quadratic time. The runtime grows quadratically with the input size.
+
+Example: Bubble sort, selection sort, or nested loops iterating over an array.
+O(2^n): Exponential time. The runtime doubles with each additional input element.
+
+Example: Solving problems with exhaustive search like the traveling salesman problem.
+O(n!): Factorial time. The runtime grows factorially with input size, often seen in problems involving permutations.
+
+Example: Solving the traveling salesman problem using brute force.
+2. Space Complexity Analysis
+Space complexity measures the amount of memory an algorithm needs relative to the input size. This is also expressed using Big O notation.
+
+Common Space Complexities:
+O(1): Constant space. The amount of memory used does not depend on the input size.
+
+Example: Sorting in place using algorithms like QuickSort.
+O(n): Linear space. The algorithm requires memory proportional to the size of the input.
+
+Example: Storing an array or linked list of size n.
+O(n²): Quadratic space. This happens when an algorithm uses a two-dimensional structure, like a matrix.
+
+Example: Storing an adjacency matrix for a graph.
+
+feb 18
+
+ava Generics allow you to write code that can work with different types while providing compile-time type safety. They enable classes, interfaces, and methods to operate on objects of various types while maintaining type integrity, reducing runtime errors, and improving code reusability.
+
+Key points about Java Generics:
+
+Type Parameters: Generics use type parameters (e.g., T, E, K, V) to define the type of elements they operate on. For example, a generic class might look like class Box<T> { T value; }.
+Compile-time Safety: Generics ensure that type errors are caught at compile time rather than runtime, preventing ClassCastException.
+Generic Methods: Methods can be defined with generics to handle different types. For example, public <T> void print(T item) { System.out.println(item); }.
+Bounded Types: You can constrain the types a generic can work with using the extends keyword. For example, <T extends Number> restricts T to be a subclass of Number.
+Wildcards: The wildcard ? can represent an unknown type. ? extends T is used for upper bounds, and ? super T for lower bounds.
+
