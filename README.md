@@ -297,3 +297,38 @@ Generic Methods: Methods can be defined with generics to handle different types.
 Bounded Types: You can constrain the types a generic can work with using the extends keyword. For example, <T extends Number> restricts T to be a subclass of Number.
 Wildcards: The wildcard ? can represent an unknown type. ? extends T is used for upper bounds, and ? super T for lower bounds.
 
+feb 19
+
+In Java, Collection is a framework that provides an architecture to store and manipulate a group of objects. It contains interfaces, classes, and methods for working with different data structures like lists, sets, queues, and maps.
+
+Set Interface
+
+A Set is a collection that does not allow duplicate elements.
+Implementations:
+HashSet → Unordered, allows fast lookups.
+LinkedHashSet → Maintains insertion order.
+TreeSet → Stores elements in sorted order (natural ordering or custom comparator).
+
+List Interface
+
+A List is an ordered collection that allows duplicates and maintains insertion order.
+Implementations:
+ArrayList → Fast random access, dynamic resizing.
+LinkedList → Fast insertions/deletions, slow random access.
+Vector → Synchronized version of ArrayList (thread-safe).
+
+Queue Interface
+
+A Queue follows FIFO (First In, First Out) order.
+Special types:
+PriorityQueue → Orders elements based on priority (natural/custom order).
+Deque (Double-ended Queue) → Allows adding/removing elements from both ends (LinkedList, ArrayDeque).
+
+Map Interface
+
+A Map stores key-value pairs (unique keys).
+Implementations:
+HashMap → Unordered, allows fast lookups.
+LinkedHashMap → Maintains insertion order.
+TreeMap → Stores elements in sorted order (by key).
+
