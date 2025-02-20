@@ -332,3 +332,29 @@ HashMap → Unordered, allows fast lookups.
 LinkedHashMap → Maintains insertion order.
 TreeMap → Stores elements in sorted order (by key).
 
+feb 20
+
+Java Streams - Overview
+Java Streams (introduced in Java 8) provide a functional and efficient way to process collections, arrays, or I/O operations using a pipeline of operations.
+
+Key Features:
+✅ Declarative – Focuses on what to do, not how to do it.
+✅ Lazy Evaluation – Operations are executed only when needed.
+✅ Parallel Processing – Supports parallel execution for better performance.
+
+Types of Streams:
+I/O Streams (java.io)
+
+Byte Streams: InputStream, OutputStream (e.g., FileInputStream)
+Character Streams: Reader, Writer (e.g., BufferedReader)
+Java 8 Streams (java.util.stream)
+
+Stream API for processing collections.
+Example:
+
+List<String> names = List.of("Alice", "Bob", "Charlie");
+names.stream().filter(n -> n.startsWith("A")).forEach(System.out::println);
+Common Stream Operations:
+🔹 Intermediate (return a stream) → map(), filter(), sorted()
+🔹 Terminal (produce result) → collect(), forEach(), count()
+
