@@ -358,3 +358,18 @@ Common Stream Operations:
 🔹 Intermediate (return a stream) → map(), filter(), sorted()
 🔹 Terminal (produce result) → collect(), forEach(), count()
 
+feb 21
+
+Exception Handling in Java:
+Exception handling is a mechanism in Java to handle runtime errors and maintain normal program flow. It uses five key keywords:
+
+try – Defines a block of code where an exception might occur.
+catch – Handles the exception if it occurs in the try block.
+finally – Executes code (cleanup operations) regardless of an exception.
+throw – Used to explicitly throw an exception.
+throws – Declares exceptions that a method may throw.
+Types of Exceptions:
+Checked Exceptions (Compile-time) – Must be handled using try-catch or declared with throws (e.g., IOException).
+Unchecked Exceptions (Runtime) – Occur during execution (e.g., NullPointerException, ArithmeticException).
+Custom Exceptions – User-defined exceptions extending Exception or RuntimeException.
+
