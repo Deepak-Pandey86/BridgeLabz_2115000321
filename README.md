@@ -373,3 +373,39 @@ Checked Exceptions (Compile-time) – Must be handled using try-catch or declare
 Unchecked Exceptions (Runtime) – Occur during execution (e.g., NullPointerException, ArithmeticException).
 Custom Exceptions – User-defined exceptions extending Exception or RuntimeException.
 
+feb 22
+
+Regex (Regular Expressions)
+Regex (Regular Expressions) is a sequence of characters that defines a search pattern. It is widely used for string matching, validation, and extraction.
+
+Common Use Cases:
+Validation: Checking if a string matches a specific pattern (e.g., email, phone number, password).
+Extraction: Retrieving specific data from text (e.g., extracting dates, emails).
+Replacement: Modifying strings based on patterns (e.g., replacing multiple spaces with a single space).
+Basic Regex Patterns:
+\d → Matches a digit (0-9).
+\w → Matches a word character (a-z, A-Z, 0-9, _).
+\s → Matches a whitespace.
+^ → Start of a string.
+$ → End of a string.
++ → Matches one or more occurrences.
+* → Matches zero or more occurrences.
+{n,m} → Matches between n and m occurrences.
+JUnit (Java Unit Testing)
+JUnit is a widely used testing framework for Java that helps in writing and running test cases.
+
+Key Features:
+Annotations:
+
+@Test → Marks a method as a test case.
+@BeforeEach → Runs before each test case.
+@AfterEach → Runs after each test case.
+@ParameterizedTest → Runs the same test with different parameters.
+@Timeout(n) → Fails a test if it exceeds n seconds.
+Assertions (for verifying expected results):
+
+assertEquals(expected, actual)
+assertTrue(condition)
+assertFalse(condition)
+assertThrows(Exception.class, () -> methodCall())
+
