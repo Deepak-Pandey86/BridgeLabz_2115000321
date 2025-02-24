@@ -409,3 +409,23 @@ assertTrue(condition)
 assertFalse(condition)
 assertThrows(Exception.class, () -> methodCall())
 
+
+feb 24
+
+Annotations
+Annotations in Java provide metadata about code and do not affect execution directly. They are used for code documentation, compilation checks, and runtime processing.
+
+🔹 Types of Annotations:
+
+Built-in Annotations (@Override, @Deprecated, @SuppressWarnings)
+Custom Annotations (User-defined, created using @interface)
+Meta-annotations (@Retention, @Target, etc.)
+
+Reflection
+Reflection is a powerful Java feature that allows introspection and modification of classes, methods, and fields at runtime. It is used in frameworks, serialization, dependency injection, and testing.
+
+🔹 Key Reflection Features:
+✔ Get class metadata (Class<?> clazz = obj.getClass())
+✔ Access methods & fields dynamically (Method method = clazz.getMethod("methodName"))
+✔ Modify private fields (field.setAccessible(true))
+✔ Invoke methods dynamically (method.invoke(obj))
