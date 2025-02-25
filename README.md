@@ -429,3 +429,44 @@ Reflection is a powerful Java feature that allows introspection and modification
 ✔ Access methods & fields dynamically (Method method = clazz.getMethod("methodName"))
 ✔ Modify private fields (field.setAccessible(true))
 ✔ Invoke methods dynamically (method.invoke(obj))
+
+feb 25
+
+Short Note on CSV Data Handling in Java
+CSV (Comma-Separated Values) is a common format for storing and exchanging tabular data. In Java, CSV handling involves reading, writing, filtering, and modifying CSV files efficiently.
+
+Key Operations in CSV Handling
+Reading a CSV File
+
+Use BufferedReader for efficient reading.
+Parse lines using split(",") or use libraries like OpenCSV or Apache Commons CSV.
+Writing to a CSV File
+
+Use BufferedWriter or FileWriter to write structured data.
+Convert objects to CSV format before writing.
+Processing and Filtering Data
+
+Use loops and conditions to filter records (e.g., students with marks > 80).
+Sort data based on a column using Collections.sort().
+Modifying a CSV File
+
+Read, update specific values (e.g., increase salaries by 10%), and write back.
+Handling Large CSV Files
+
+Read in chunks (e.g., 100 lines at a time) to avoid memory issues.
+Use Streaming APIs for efficient processing.
+Validating CSV Data
+
+Ensure correct email formats using Regex.
+Check for valid phone numbers or missing values.
+Converting CSV to Objects
+
+Parse CSV rows into Java objects (List<Student> students).
+Use libraries like Jackson or Gson for easy conversion.
+
+
+Common Libraries for CSV Handling
+OpenCSV (easy parsing & writing)
+Apache Commons CSV (better handling of quotes, special characters)
+Super CSV (powerful transformation & validation)
+CSV handling is essential for data import/export, reporting, and processing large datasets efficiently in Java applications. 
